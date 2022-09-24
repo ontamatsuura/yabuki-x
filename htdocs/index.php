@@ -4,10 +4,11 @@ $paramq = '';
 if (isset($_GET['q']))
   $paramq = htmlspecialchars($_GET['q'], ENT_QUOTES, 'UTF-8');
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <style type="text/css">
+    <style>
       html, body { height: 100%; }
       td { font-size: smaller; }
     </style>
@@ -18,7 +19,7 @@ if (isset($_GET['q']))
     <title>郵便番号検索フォームと地理院タイルのマッシュアップ2</title>
   </head>
   <body>
-    <form action="" method="get">
+    <form method="get">
       <p>
         <input type="text" name="q" value='<?php echo $paramq; ?>' placeholder="275" />
         <input type="submit" value="search" />
