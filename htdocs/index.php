@@ -20,7 +20,7 @@ if (isset($_GET['q']))
   <body>
     <form action="" method="get">
       <p>
-        <input type="text" name="q" value='<?php echo $paramq; ?>' placeholder="275-8588" />
+        <input type="text" name="q" value='<?php echo $paramq; ?>' placeholder="2758588" />
         <input type="submit" value="search" />
         <span id="output"></span>
       </p>
